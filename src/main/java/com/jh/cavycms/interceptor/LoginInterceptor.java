@@ -33,8 +33,8 @@ public class LoginInterceptor implements HandlerInterceptor {
             }
         }
         request.setAttribute("msg", "尚未进行登录");
-        log.info("未登录、已拦截");
-        response.sendRedirect("/cavy/login");
+        log.info("未登录、已拦截{},{}", request.getServletPath(), request.getContextPath());
+        response.sendRedirect("/cavy/toLogin");
         return false;
 
     }

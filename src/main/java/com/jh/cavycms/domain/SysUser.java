@@ -2,23 +2,26 @@ package com.jh.cavycms.domain;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import lombok.Data;
-import lombok.ToString;
-
 import java.util.Date;
+import lombok.Data;
 
 /**
  * 用户表
  */
 @ApiModel(value = "com-jh-cavycms-domain-SysUser")
 @Data
-@ToString
 public class SysUser {
     @ApiModelProperty(value = "")
     private Integer id;
 
     @ApiModelProperty(value = "")
+    private String account;
+
+    @ApiModelProperty(value = "")
     private String name;
+
+    @ApiModelProperty(value = "")
+    private String passWord;
 
     @ApiModelProperty(value = "")
     private Integer age;
@@ -36,11 +39,8 @@ public class SysUser {
     private Date createDate;
 
     @ApiModelProperty(value = "")
-    private String lastModify;
+    private String updateBy;
 
     @ApiModelProperty(value = "")
-    private Date lastModifyDate;
-
-    @ApiModelProperty(value = "")
-    private String passWord;
+    private Date updateDate;
 }
