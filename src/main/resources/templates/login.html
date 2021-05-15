@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <!-- bootstrap 3.0.2 -->
+    <link href="static/resource/css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="static/resource/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
+    <!-- Custom styles for this template -->
+    <link href="static/resource/css/signin.css" rel="stylesheet">
+    <title>login</title>
+</head>
+
+
+<body>
+
+<div class="container">
+    <form class="form-signin" action="#" th:action="@{/toIndex}" th:object="${SysUser}" method="post">
+        <img class="mb-11" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72"
+             height="72">
+        <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+        <label for="name" class="sr-only">Email address</label>
+        <input type="text" th:field="*{name}" id="name" class="form-control" placeholder="Email address or Account"
+               required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" th:field="*{passWord}" id="inputPassword" class="form-control" placeholder="Password"
+               required>
+        <div class="checkbox mb-3">
+            <label>
+                <input type="checkbox" value="remember-me"> Remember me
+            </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        <p class="mt-5 mb-3 text-muted">&copy; 2021-2022</p>
+    </form>
+
+
+</div> <!-- /container -->
+</body>
+</html>
