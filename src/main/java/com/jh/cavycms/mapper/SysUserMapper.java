@@ -1,6 +1,6 @@
 package com.jh.cavycms.mapper;
 
-import com.jh.cavycms.domain.SysUser;
+import com.jh.cavycms.domain.SysUser;import java.util.List;import java.util.Map;
 
 public interface SysUserMapper {
     /**
@@ -50,4 +50,6 @@ public interface SysUserMapper {
      * @return update count
      */
     int updateByPrimaryKey(SysUser record);
+
+    List<SysUser> listByPage(Map<String, Object> params);
 }

@@ -24,6 +24,15 @@ public class SysUser {
     private String passWord;
 
     @ApiModelProperty(value = "")
+    private String realName;
+
+    @ApiModelProperty(value = "")
+    private String mobile;
+
+    @ApiModelProperty(value = "")
+    private String email;
+
+    @ApiModelProperty(value = "")
     private Integer age;
 
     @ApiModelProperty(value = "")
@@ -31,6 +40,9 @@ public class SysUser {
 
     @ApiModelProperty(value = "")
     private String job;
+
+    @ApiModelProperty(value = "")
+    private Integer status;
 
     @ApiModelProperty(value = "")
     private String creator;

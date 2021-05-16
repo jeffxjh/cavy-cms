@@ -54,6 +54,12 @@ public class LoginController {
         mv.setViewName("index");
         return mv;
     }
+    @RequestMapping(value = {"/toDashboard"})
+    public ModelAndView toDashboard(HttpServletRequest request, HttpServletResponse response) {
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("dashboard");
+        return mv;
+    }
 
     // 产生验证码
     @RequestMapping("/getVerifyCode")

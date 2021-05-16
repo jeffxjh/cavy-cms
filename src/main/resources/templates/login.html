@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>CavyCms - 后台登录</title>
     <!-- Custom Styles-->
-    <link href="static/resource/css/custom-login.css" rel="stylesheet"/>
-    <link rel="stylesheet" type="text/css" href="static/resource/js/jQueryMessage/css/message.skin.css"/>
+    <link th:href="@{/resource/css/custom-login.css}" rel="stylesheet"/>
+    <link th:href="@{/resource/js/jQueryMessage/css/message.skin.css}" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -34,9 +34,9 @@
 <div class="copyright">
     Copyright © 2021
 </div>
-<script type="text/javascript" src="static/resource/js/jquery.min.js"></script>
-<script type="text/javascript" src="static/resource/js/jQueryMessage/js/jquery.plugin.message.js"></script>
-<script type="text/javascript" src="static/resource/js/vector.js"></script>
+<script type="text/javascript" th:src="@{/resource/js/jquery.min.js}"></script>
+<script type="text/javascript" th:src="@{/resource/js/jQueryMessage/js/jquery.plugin.message.js}"></script>
+<script type="text/javascript" th:src="@{/resource/js/vector.js}"></script>
 <script type="text/javascript">
     if (window.frames.length != parent.frames.length) {
         window.parent.location.href = "/cavy/logout";
